@@ -142,7 +142,6 @@ body.mw-live-edit {
     padding: 25px;
 }
 
-
 @media screen and (min-width: 992px) {
     .tabs-2 .nav-tabs {
         /*border-bottom: 3px solid #3d00b4;*/
@@ -183,4 +182,10 @@ body.mw-live-edit {
     transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
+}
+
+.bxSlider-heading .bx-wrapper .bx-controls-direction a:before {
+    width: 100%;
+    display: block;
+    position: absolute;
 }
