@@ -8,7 +8,8 @@
                     <p><?php echo $secondaryText; ?></p>
 
                     <div class="m-t-50 support-by">
-                        <p><?php print _lang('С подкрепата на: ', 'templates/microweber-whitelabel'); ?> &nbsp; <a href="https://neterra.net/bg" target="_blank"><img src="<?php print template_url(); ?>assets/img/neterra_logo.png" alt=""/></a></p>
+                        <p><?php print _lang('С подкрепата на: ', 'templates/microweber-whitelabel'); ?> &nbsp; <a href="https://microweber.org" target="_blank"><img src="https://microweber.org/userfiles/media/microweber.org/logo_reverse.png" alt=""/></a></p>
+                        <?php /*<p><?php print _lang('С подкрепата на: ', 'templates/microweber-whitelabel'); ?> &nbsp; <a href="https://neterra.net/bg" target="_blank"><img src="<?php print template_url(); ?>assets/img/neterra_logo.png" alt=""/></a></p>*/ ?>
                     </div>
                 </div>
             </div>
