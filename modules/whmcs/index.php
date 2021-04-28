@@ -1,9 +1,10 @@
 <?php
 $template = get_option('data-template', $params['id']);
 
-$whmcs_url = get_option('whmcs_url', $params['id']);
-if (!isset($whmcs_url) or $whmcs_url == false or $whmcs_url == '') {
-    $whmcs_url = 'https://members.microweber.com';
+$whmcs_url = '';
+$settings = get_whitelabel_whmcs_settings();
+if (!empty($settings)) {
+    $whmcs_url = $settings['whmcs_url'];
 }
 
 $target = get_option('target', $params['id']);
@@ -33,7 +34,7 @@ if (!isset($plan_style) or $plan_style == false or $plan_style == '') {
 
 $style = get_option('style', $params['id']);
 if (!isset($style) or $style == false or $style == '') {
-    $style = 'default';
+    $style = 'whitelabel';
 }
 
 $style_other = get_option('style_other', $params['id']);

@@ -1,11 +1,12 @@
 <?php only_admin_access(); ?>
 
 <?php
+$settings = get_whitelabel_whmcs_settings();
 
-$whmcs_url = get_option('whmcs_url', $params['id']);
+/*$whmcs_url = get_option('whmcs_url', $params['id']);
 if (!isset($whmcs_url) or $whmcs_url == false or $whmcs_url == '') {
-    $whmcs_url = 'https://members.microweber.com';
-}
+    $whmcs_url = $settings['whmcs_url'];
+}*/
 
 $target = get_option('target', $params['id']);
 if (!isset($target) or $target == false or $target == '') {
@@ -70,10 +71,11 @@ if (!isset($style_other) or $style_other == false or $style_other == '') {
         <div class="mw-accordion-content mw-ui-box mw-ui-box-content">
             <!-- Settings Content -->
             <div class="module-live-edit-settings module-whmcs-settings">
+               <!--
                 <div class="mw-ui-field-holder">
-                    <label class="mw-ui-label"><?php _e('Your WHMCS URL'); ?></label>
-                    <input type="text" class="mw_option_field mw-ui-field mw-full-width" placeholder="Example: https://members.microweber.com" name="whmcs_url" value="<?php print $whmcs_url; ?>">
-                </div>
+                    <label class="mw-ui-label"><?php /*_e('Your WHMCS URL'); */?></label>
+                    <input type="text" class="mw_option_field mw-ui-field mw-full-width" placeholder="Example: https://members.microweber.com" name="whmcs_url" value="<?php /*print $whmcs_url; */?>">
+                </div>-->
 
                 <div class="mw-ui-field-holder">
                     <label class="mw-ui-label"><?php _e('Open at'); ?></label>
