@@ -7,6 +7,9 @@ if (!empty($settings)) {
     $whmcs_url = $settings['whmcs_url'];
 }
 
+$whmcs_url = str_replace('https://','//', $whmcs_url);
+$whmcs_url = str_replace('http://','//', $whmcs_url);
+
 $target = get_option('target', $params['id']);
 if (!isset($target) or $target == false or $target == '') {
     $target = '';
